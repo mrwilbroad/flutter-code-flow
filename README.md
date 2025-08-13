@@ -1,3 +1,12 @@
+# State Management Flow (Flutter + Provider Example)
+
+This document describes the **data flow** and **state update cycle** when using `Provider` in Flutter for managing application state.
+
+---
+
+## 📌 Flow Overview
+
+```text
 COMPONENT (Widget, e.g., UserProfilePage)
    ↓ (calls method on Provider)
    ↓
@@ -24,7 +33,7 @@ DATABASE / API (Backend, e.g., GraphQL endpoint or REST server)
    ↑
 SERVICE (UserRepository processes response)
    ↑
-EFFECTS (UserService validates/ transforms data)
+EFFECTS (UserService validates/transforms data)
    ↑
 ACTION (UserProvider receives data from Service)
    ↑
